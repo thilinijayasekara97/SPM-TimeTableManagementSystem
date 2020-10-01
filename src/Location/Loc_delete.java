@@ -5,6 +5,7 @@
  */
 package Location;
 
+import Room.Rooms;
 import Statics.Stu_statics;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -417,6 +418,11 @@ public class Loc_delete extends javax.swing.JFrame {
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/new_icons/icons8-room-30.png"))); // NOI18N
         jButton7.setText("   Rooms");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         kGradientPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 250, 60));
 
         btn_navStatics.setBackground(new java.awt.Color(51, 0, 255));
@@ -478,7 +484,7 @@ public class Loc_delete extends javax.swing.JFrame {
 
     private void btn_navLocationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_navLocationActionPerformed
         // TODO add your handling code here:
-        new Example().setVisible(true);
+        new Loc_add().setVisible(true);
         this.setVisible(false); 
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE); 
         this.dispose();
@@ -492,6 +498,14 @@ public class Loc_delete extends javax.swing.JFrame {
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE); 
         this.dispose();
     }//GEN-LAST:event_btn_navStaticsActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        new Rooms().setVisible(true);
+        this.setVisible(false);
+        this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments

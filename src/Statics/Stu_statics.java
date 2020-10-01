@@ -5,7 +5,7 @@
  */
 package Statics;
 
-import Location.Example;
+import Location.Loc_add;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -674,7 +674,7 @@ public class Stu_statics extends javax.swing.JFrame {
 
     private void btn_navLocationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_navLocationActionPerformed
         // TODO add your handling code here:
-        new Example().setVisible(true);
+        new Loc_add().setVisible(true);
         this.setVisible(false); 
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE); 
         this.dispose();
